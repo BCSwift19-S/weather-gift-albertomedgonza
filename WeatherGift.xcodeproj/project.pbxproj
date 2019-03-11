@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		71BD81B92236E02500E93DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD81B82236E02500E93DC3 /* AppDelegate.swift */; };
-		71BD81BB2236E02500E93DC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD81BA2236E02500E93DC3 /* ViewController.swift */; };
 		71BD81BE2236E02500E93DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BD81BC2236E02500E93DC3 /* Main.storyboard */; };
 		71BD81C02236E02600E93DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BD81BF2236E02600E93DC3 /* Assets.xcassets */; };
 		71BD81C32236E02600E93DC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BD81C12236E02600E93DC3 /* LaunchScreen.storyboard */; };
+		71BD81CB2236E09200E93DC3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD81CA2236E09200E93DC3 /* DetailVC.swift */; };
+		71BD81CD2236E7BE00E93DC3 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD81CC2236E7BE00E93DC3 /* ListVC.swift */; };
+		71BD81CF2236E9D500E93DC3 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD81CE2236E9D500E93DC3 /* PageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71BD81B52236E02400E93DC3 /* WeatherGift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherGift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD81B82236E02500E93DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71BD81BA2236E02500E93DC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		71BD81BD2236E02500E93DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71BD81BF2236E02600E93DC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BD81C22236E02600E93DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71BD81C42236E02600E93DC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71BD81CA2236E09200E93DC3 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		71BD81CC2236E7BE00E93DC3 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		71BD81CE2236E9D500E93DC3 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				71BD81B82236E02500E93DC3 /* AppDelegate.swift */,
-				71BD81BA2236E02500E93DC3 /* ViewController.swift */,
+				71BD81CE2236E9D500E93DC3 /* PageVC.swift */,
+				71BD81CA2236E09200E93DC3 /* DetailVC.swift */,
 				71BD81BC2236E02500E93DC3 /* Main.storyboard */,
+				71BD81CC2236E7BE00E93DC3 /* ListVC.swift */,
 				71BD81BF2236E02600E93DC3 /* Assets.xcassets */,
 				71BD81C12236E02600E93DC3 /* LaunchScreen.storyboard */,
 				71BD81C42236E02600E93DC3 /* Info.plist */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71BD81BB2236E02500E93DC3 /* ViewController.swift in Sources */,
+				71BD81CD2236E7BE00E93DC3 /* ListVC.swift in Sources */,
+				71BD81CF2236E9D500E93DC3 /* PageVC.swift in Sources */,
 				71BD81B92236E02500E93DC3 /* AppDelegate.swift in Sources */,
+				71BD81CB2236E09200E93DC3 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
