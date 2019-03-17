@@ -126,7 +126,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="xfT-fI-gB3"/>
-                                    <barButtonItem title="+" systemItem="add" id="8bf-JD-NBM"/>
+                                    <barButtonItem title="+" systemItem="add" id="8bf-JD-NBM">
+                                        <connections>
+                                            <action selector="addBarButtonPressed:" destination="ZHi-b0-pMd" id="JtB-a9-45q"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
