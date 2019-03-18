@@ -24,9 +24,9 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUserInterface()
 
-        locationLabel.text = locationsArray[currentPage].name
-        dateLabel.text = locationsArray[currentPage].coordinates
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,6 +34,10 @@ class DetailVC: UIViewController {
         if currentPage == 0 {
             getLocation()
         }
+    }
+    func updateUserInterface() {
+        locationLabel.text = locationsArray[currentPage].name
+        dateLabel.text = locationsArray[currentPage].coordinates
     }
 }
 extension DetailVC: CLLocationManagerDelegate {
@@ -64,13 +68,28 @@ extension DetailVC: CLLocationManagerDelegate {
         handleLocationAuthorizationStatus(status: status)
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let geoCoder = CLGeocoder()
+        var place = ""
         currentLocation = locations.last
         let currentLatitude = currentLocation.coordinate.latitude
         let currentLongitude = currentLocation.coordinate.longitude
         let currentCoordinates = "\(currentLatitude), \(currentLongitude)"
         dateLabel.text = currentCoordinates
-    }
+        geoCoder.reverseGeocodeLocation(currentLocation, completionHandler:
+            {placemarks, error in
+                if placemarks != nil {
+                    let placemark = placemarks?.last
+                    place = (placemark?.name)!
+                } else {
+                    print("Error retrieving place. Error code: \(error!)")
+                    place = "Unknown Weather Location"
+                }
+                self.locationsArray[0].name = place
+                self.locationsArray[0].coordinates = currentCoordinates
+                self.updateUserInterface()
+    })
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Failed to get user location")
     }
+}
 }
