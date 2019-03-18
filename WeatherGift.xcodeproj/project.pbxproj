@@ -15,6 +15,7 @@
 		71BD81CD2236E7BE00E93DC3 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD81CC2236E7BE00E93DC3 /* ListVC.swift */; };
 		71BD81CF2236E9D500E93DC3 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD81CE2236E9D500E93DC3 /* PageVC.swift */; };
 		71FE5838223EECD20033B01A /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FE5837223EECD20033B01A /* WeatherLocation.swift */; };
+		71FE585822401CC90033B01A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FE585722401CC90033B01A /* Constants.swift */; };
 		CBF9F34829D041C37DB401BF /* Pods_WeatherGift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09103B97D80CD8610622984D /* Pods_WeatherGift.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		71BD81CC2236E7BE00E93DC3 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		71BD81CE2236E9D500E93DC3 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		71FE5837223EECD20033B01A /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
+		71FE585722401CC90033B01A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				71FE5837223EECD20033B01A /* WeatherLocation.swift */,
 				71BD81CE2236E9D500E93DC3 /* PageVC.swift */,
 				71BD81CA2236E09200E93DC3 /* DetailVC.swift */,
+				71FE585722401CC90033B01A /* Constants.swift */,
 				71BD81CC2236E7BE00E93DC3 /* ListVC.swift */,
 				71BD81BC2236E02500E93DC3 /* Main.storyboard */,
 				71BD81BF2236E02600E93DC3 /* Assets.xcassets */,
@@ -247,6 +250,7 @@
 				71BD81CF2236E9D500E93DC3 /* PageVC.swift in Sources */,
 				71BD81B92236E02500E93DC3 /* AppDelegate.swift in Sources */,
 				71BD81CB2236E09200E93DC3 /* DetailVC.swift in Sources */,
+				71FE585822401CC90033B01A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
